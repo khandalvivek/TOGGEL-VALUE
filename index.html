@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="toggle()">Toggle</button>
+    
+    <div id="demo" style="background-color: aqua;">
+        Toggle value
+    </div>
+
+    <script>
+        function toggle() {
+            var value = document.getElementById("demo");
+            if (value.style.display === "none") {
+                value.style.display = "block";
+            } else {
+                value.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
